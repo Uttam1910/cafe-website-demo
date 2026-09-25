@@ -61,17 +61,20 @@ export function MenuPage() {
       />
 
       <div className="sticky top-16 z-20 border-y border-line bg-cream/95 backdrop-blur-md lg:top-[72px]">
-        <div className="container-page flex flex-col gap-3 py-3 lg:flex-row lg:items-center lg:gap-6">
-          <div className="min-w-0 flex-1">
-            <Pills
-              label="Menu categories"
-              options={menuCategories}
-              value={category}
-              onChange={(id) => update({ category: id === 'all' ? null : id })}
-              counts={counts}
-            />
-          </div>
-          <div className="relative lg:w-72">
+        <div className="container-page py-3">
+          <Pills
+            label="Menu categories"
+            options={menuCategories}
+            value={category}
+            onChange={(id) => update({ category: id === 'all' ? null : id })}
+            counts={counts}
+          />
+        </div>
+      </div>
+
+      <div className="container-page py-8 sm:py-10">
+        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <div className="relative w-full md:order-2 md:w-72">
             <Search className="pointer-events-none absolute top-1/2 left-4 size-4 -translate-y-1/2 text-muted" aria-hidden />
             <label htmlFor="menu-search" className="sr-only">
               Search the menu
@@ -85,39 +88,36 @@ export function MenuPage() {
               className="h-11 w-full rounded-full border border-line bg-paper pr-4 pl-11 text-sm outline-none focus:border-espresso"
             />
           </div>
-        </div>
-      </div>
-
-      <div className="container-page py-8 sm:py-10">
-        <div className="flex flex-wrap items-center gap-2" role="group" aria-label="Dietary filters">
-          <span className="mr-1 inline-flex items-center gap-1.5 text-[13px] font-semibold text-muted">
-            <SlidersHorizontal className="size-4" aria-hidden /> Dietary
-          </span>
-          {dietaryFilters.map((d) => {
-            const active = dietary.includes(d.id)
-            return (
+          <div className="flex flex-wrap items-center gap-2" role="group" aria-label="Dietary filters">
+            <span className="mr-1 inline-flex items-center gap-1.5 text-[13px] font-semibold text-muted">
+              <SlidersHorizontal className="size-4" aria-hidden /> Dietary
+            </span>
+            {dietaryFilters.map((d) => {
+              const active = dietary.includes(d.id)
+              return (
+                <button
+                  key={d.id}
+                  type="button"
+                  aria-pressed={active}
+                  onClick={() => toggleDiet(d.id)}
+                  className={`h-9 rounded-full border px-3.5 text-[13px] font-medium transition-colors ${
+                    active ? 'border-sage-dark bg-sage-dark text-paper' : 'border-line bg-paper text-roast hover:border-sage'
+                  }`}
+                >
+                  {d.label}
+                </button>
+              )
+            })}
+            {hasFilters && (
               <button
-                key={d.id}
                 type="button"
-                aria-pressed={active}
-                onClick={() => toggleDiet(d.id)}
-                className={`h-9 rounded-full border px-3.5 text-[13px] font-medium transition-colors ${
-                  active ? 'border-sage-dark bg-sage-dark text-paper' : 'border-line bg-paper text-roast hover:border-sage'
-                }`}
+                onClick={() => setParams({}, { replace: true, preventScrollReset: true })}
+                className="inline-flex items-center gap-1 px-1 text-[13px] font-semibold text-terracotta-dark hover:underline"
               >
-                {d.label}
+                <X className="size-3.5" aria-hidden /> Clear filters
               </button>
-            )
-          })}
-          {hasFilters && (
-            <button
-              type="button"
-              onClick={() => setParams({}, { replace: true, preventScrollReset: true })}
-              className="ml-auto inline-flex items-center gap-1 text-[13px] font-semibold text-terracotta-dark hover:underline"
-            >
-              <X className="size-3.5" aria-hidden /> Clear filters
-            </button>
-          )}
+            )}
+          </div>
         </div>
 
         <p className="mt-6 text-sm text-muted" aria-live="polite">

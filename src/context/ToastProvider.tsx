@@ -16,7 +16,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => () => window.clearTimeout(timer.current), [])
 
-  const value = useMemo(() => ({ showToast }), [showToast])
+  const value = useMemo(() => ({ showToast, dismissToast: dismiss }), [showToast, dismiss])
 
   return (
     <ToastContext.Provider value={value}>

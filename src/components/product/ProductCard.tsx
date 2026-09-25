@@ -53,14 +53,14 @@ export function ProductCard({
         </button>
       </div>
       <div className="flex flex-1 flex-col pt-4">
-        <div className="flex items-start justify-between gap-3">
+        <div className="flex flex-col gap-1 min-[420px]:flex-row min-[420px]:items-start min-[420px]:justify-between min-[420px]:gap-3">
           <Heading className="flex items-center gap-2 font-serif text-[1.18rem] leading-snug text-espresso">
             <FoodMarker product={product} />
             <Link to={href} className="after:absolute after:inset-0 after:content-[''] hover:underline hover:decoration-1 hover:underline-offset-4">
               {product.name}
             </Link>
           </Heading>
-          <p className="shrink-0 pt-0.5 text-[15px] font-semibold text-espresso tabular-nums">{formatINR(product.price)}</p>
+          <p className="shrink-0 text-[15px] font-semibold min-[420px]:pt-0.5 text-espresso tabular-nums">{formatINR(product.price)}</p>
         </div>
         {showDescription && <p className="mt-1.5 line-clamp-2 text-[13.5px] leading-relaxed text-muted">{product.description}</p>}
         <div className="mt-3">

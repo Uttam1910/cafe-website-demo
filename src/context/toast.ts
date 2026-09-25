@@ -7,6 +7,7 @@ export interface ToastOptions {
 
 export interface ToastContextValue {
   showToast: (toast: ToastOptions) => void
+  dismissToast: () => void
 }
 
 export const ToastContext = createContext<ToastContextValue | null>(null)

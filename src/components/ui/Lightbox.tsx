@@ -41,7 +41,7 @@ export function Lightbox({ items, index, onClose, onIndex }: LightboxProps) {
       role="dialog"
       aria-modal="true"
       aria-label={`Photo ${index + 1} of ${count}: ${item.caption}`}
-      className="fixed inset-0 z-[60] flex animate-fade-in flex-col bg-charcoal/96 text-paper"
+      className="fixed inset-0 z-[60] flex animate-fade-in flex-col bg-charcoal text-paper"
     >
       <div className="flex items-center justify-between px-4 py-3 sm:px-6">
         <p className="text-sm text-paper/70 tabular-nums">

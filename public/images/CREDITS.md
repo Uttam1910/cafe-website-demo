@@ -47,7 +47,7 @@ All photographs are from [Unsplash](https://unsplash.com) and used under the [Un
 | `scenes/interior-soft-*.webp` | [Finn](https://unsplash.com/@finn_staygold) | [Unsplash](https://unsplash.com/photos/a-room-with-a-bunch-of-tables-and-chairs-X-V9r34NYnI) |
 | `scenes/window-seat-*.webp` | [Sehajpal Singh](https://unsplash.com/@fujix_pal) | [Unsplash](https://unsplash.com/photos/a-row-of-chairs-sitting-in-front-of-a-window-RM3aE8O5RFE) |
 | `scenes/interior-brick-*.webp` | [Vincent Yap](https://unsplash.com/@chonky_films) | [Unsplash](https://unsplash.com/photos/cactus-and-succulents-on-windowsill-Wxi1WArkjpo) |
-| `scenes/barista-pour-*.webp` | [Chloe Leis](https://unsplash.com/@tsunamiholmes) | [Unsplash](https://unsplash.com/photos/woman-pouring-a-milk-on-bowl-AeECO_I_8Xg) |
+| `scenes/barista-pour-*.webp` | [Ben Garratt](https://unsplash.com/@wstn) | [Unsplash](https://unsplash.com/photos/man-in-white-dress-shirt-holding-silver-spoon-uhMi-ym4-to) |
 | `scenes/latte-art-pour-*.webp` | [Caramel](https://unsplash.com/@caramel_works) | [Unsplash](https://unsplash.com/photos/a-person-holding-a-cup-of-coffee-in-their-hand-UBoH66BA48c) |
 | `scenes/barista-machine-*.webp` | [Luke Porter](https://unsplash.com/@lukeporter) | [Unsplash](https://unsplash.com/photos/person-holding-black-coffee-maker-TET4lknuyr0) |
 | `scenes/espresso-extraction-*.webp` | [Ivan Torres](https://unsplash.com/@iavnt) | [Unsplash](https://unsplash.com/photos/a-glass-filled-with-liquid-sitting-on-top-of-a-counter-VQNuIzV8MBA) |
@@ -69,8 +69,8 @@ All photographs are from [Unsplash](https://unsplash.com) and used under the [Un
 | `scenes/croissants-tray-*.webp` | [Conor Brown](https://unsplash.com/@commonboxturtle) | [Unsplash](https://unsplash.com/photos/a-bunch-of-croissants-that-are-on-a-table-sqkXyyj4WdE) |
 | `scenes/chai-hand-*.webp` | [VD Photography](https://unsplash.com/@vdphotography) | [Unsplash](https://unsplash.com/photos/a-person-holding-a-cup-of-coffee-in-their-hand-4UvTC5FnSUo) |
 | `scenes/chai-tray-*.webp` | [Dilpreet Singh](https://unsplash.com/@its_dilpreet) | [Unsplash](https://unsplash.com/photos/a-metal-tray-filled-with-glasses-filled-with-liquid-TlFf1kJm_zU) |
-| `scenes/woman-window-*.webp` | [Surojit Das](https://unsplash.com/@madartist1) | [Unsplash](https://unsplash.com/photos/a-woman-drinking-a-cup-of-coffee-in-front-of-a-window-wiRmy_A661A) |
+| `scenes/chai-share-*.webp` | [Harsh Kondekar](https://unsplash.com/@harsh_jpeg) | [Unsplash](https://unsplash.com/photos/a-couple-of-people-that-are-holding-a-cup-2QiB2kwIIAU) |
 | `scenes/woman-cafe-*.webp` | [Dollar Gill](https://unsplash.com/@dollargill) | [Unsplash](https://unsplash.com/photos/woman-in-white-t-shirt-and-green-skirt-sitting-on-chair-holding-white-ceramic-mug-0QIYZdXg28w) |
-| `scenes/friends-table-*.webp` | [Melody Zimmerman](https://unsplash.com/@prairiepilgrim) | [Unsplash](https://unsplash.com/photos/a-group-of-people-sitting-around-a-white-table-T9Mhnglfunw) |
+| `scenes/friends-table-*.webp` | [Toa Heftiba](https://unsplash.com/@heftiba) | [Unsplash](https://unsplash.com/photos/3-women-and-2-men-sitting-on-brown-wooden-table-0baDgWmslZ8) |
 | `scenes/latte-top-*.webp` | [Phil Desforges](https://unsplash.com/@storybyphil) | [Unsplash](https://unsplash.com/photos/cafe-latte-Nw8wbiDE3gU) |
 | `scenes/coffee-wood-*.webp` | [Gabriel Forsberg](https://unsplash.com/@gatlyn) | [Unsplash](https://unsplash.com/photos/cooked-bread-on-plate-1h1dyDxL31g) |

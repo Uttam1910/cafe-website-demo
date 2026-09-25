@@ -13,7 +13,7 @@ export const gallery: GalleryItem[] = [
   { id: 'g01', image: 'latte-art-pour', category: 'coffee', caption: 'The first pour of the morning', tall: true },
   { id: 'g02', image: 'interior-sun', category: 'space', caption: 'Four o’clock light across the long table' },
   { id: 'g03', image: 'brunch-flatlay', category: 'food', caption: 'Sunday brunch, for the whole table' },
-  { id: 'g04', image: 'woman-window', category: 'people', caption: 'A slow cup by the window' },
+  { id: 'g04', image: 'chai-share', category: 'people', caption: 'Chai, passed across the table' },
   { id: 'g05', image: 'baker-dough', category: 'behind-the-scenes', caption: 'Dough that started two days ago' },
   { id: 'g06', image: 'chai-hand', category: 'coffee', caption: 'Kulhad chai, the way it should be', tall: true },
   { id: 'g07', image: 'interior-plants', category: 'space', caption: 'The plant corner everyone asks about', tall: true },
@@ -42,7 +42,7 @@ export const instagramFeed: GalleryItem['image'][] = [
   'interior-plants',
   'chai-hand',
   'croissants-tray',
-  'woman-window',
+  'chai-share',
   'latte-croissant',
   'cozy-cup',
 ]

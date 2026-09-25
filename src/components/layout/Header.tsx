@@ -42,14 +42,14 @@ export function Header() {
           <Logo tone={transparent ? 'light' : 'dark'} />
 
           <nav aria-label="Primary" className="ml-auto hidden lg:block">
-            <ul className="flex items-center gap-1 xl:gap-2">
+            <ul className="flex items-center gap-0.5 xl:gap-2">
               {primaryNav.map((item) => (
                 <li key={item.to}>
                   <NavLink
                     to={item.to}
                     end={item.to === '/'}
                     className={({ isActive }) =>
-                      `relative rounded-full px-3 py-2 text-[13.5px] font-medium transition-colors after:absolute after:inset-x-3 after:-bottom-0.5 after:h-px after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 ${
+                      `relative rounded-full px-2 py-2 text-[13.5px] font-medium whitespace-nowrap transition-colors after:absolute after:inset-x-2 xl:px-3 xl:after:inset-x-3 after:-bottom-0.5 after:h-px after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 ${
                         transparent ? 'text-paper/90 after:bg-paper hover:text-paper' : 'text-roast after:bg-espresso hover:text-espresso'
                       } ${isActive ? `after:scale-x-100 ${transparent ? 'text-paper!' : 'text-espresso!'}` : ''}`
                     }

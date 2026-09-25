@@ -47,7 +47,7 @@ export function NewsletterForm({ tone = 'dark', compact = false }: { tone?: 'dar
           autoComplete="email"
           aria-invalid={error ? true : undefined}
           aria-describedby={error ? `${id}-err` : undefined}
-          className={`h-12 min-w-0 flex-1 rounded-full border px-5 text-[15px] outline-none transition-colors ${
+          className={`h-12 min-w-0 rounded-full ${compact ? 'flex-1' : 'w-full sm:w-auto sm:flex-1'} border px-5 text-[15px] outline-none transition-colors ${
             light
               ? 'border-white/20 bg-white/5 text-paper placeholder:text-paper/45 focus:border-paper/70'
               : 'border-line bg-paper text-charcoal placeholder:text-muted/70 focus:border-espresso'

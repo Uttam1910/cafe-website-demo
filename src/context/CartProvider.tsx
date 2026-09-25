@@ -19,9 +19,12 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const [rawLines, setRawLines] = useState<CartLine[]>([])
   const [details, setDetailsState] = useState<OrderDetails>(initialDetails)
   const [drawerOpen, setDrawerOpen] = useState(false)
-  const { showToast } = useToast()
+  const { showToast, dismissToast } = useToast()
 
-  const openDrawer = useCallback(() => setDrawerOpen(true), [])
+  const openDrawer = useCallback(() => {
+    dismissToast()
+    setDrawerOpen(true)
+  }, [dismissToast])
   const closeDrawer = useCallback(() => setDrawerOpen(false), [])
 
   const addItem = useCallback(

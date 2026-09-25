@@ -1,33 +1,40 @@
-# React + TypeScript + Vite
+# MORNING THEORY — Coffee • Bakes • Good Days
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A frontend-only website demo for a fictional specialty café in Bandra West, Mumbai.
+Business details, menu, prices and testimonials are illustrative. No orders, payments,
+reservations or messages are sent anywhere.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+React 19 · Vite · TypeScript · Tailwind CSS v4 · React Router · Lucide icons.
+Fonts (Fraunces, DM Sans, Caveat) are self-hosted via Fontsource.
 
-## React Compiler
+## Scripts
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev       # local dev server
+npm run build     # type-check + production build
+npm run lint      # oxlint
+npm run preview   # serve the production build
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
-# cafe-website-demo
+When deploying, configure the host to serve `index.html` for unknown paths (SPA fallback) so deep links such as `/menu/pistachio-latte` work.
+
+## Re-branding for another café
+
+| What | Where |
+| --- | --- |
+| Name, tagline, contact, hours, locations, tax and delivery fees | `src/config/cafe.ts` |
+| Menu items, prices, options, dietary tags | `src/data/products.ts`, `src/data/menu.ts` |
+| Hero slides, brand strip, craft pillars | `src/data/home.ts` |
+| Gallery and Instagram feed | `src/data/gallery.ts` |
+| Testimonials, FAQs, legal copy | `src/data/testimonials.ts`, `src/data/faqs.ts`, `src/data/legal.ts` |
+| Colours and type | `@theme` block in `src/index.css` |
+
+## Images
+
+All photography is from Unsplash (Unsplash License, no Unsplash+ assets), stored locally as
+WebP in three responsive sizes under `public/images/`. Photographer credits live in
+`public/images/CREDITS.md`, on the `/credits` page, and in `src/data/images.ts`, which holds
+the metadata and alt text for each image.
